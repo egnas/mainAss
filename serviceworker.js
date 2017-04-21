@@ -48,7 +48,7 @@ var CACHED_URLS = [
     BASE_PATH + 'offline-map.js',
     // BASE_PATH + 'Task5and6/material.js',
     // Manifest
-    BASE_PATH + 'Tmanifest.json',
+    BASE_PATH + 'manifest.json',
     // BASE_PATH + 'appimages/event-default.png',
     BASE_PATH + 'scripts.js',
     BASE_PATH + 'events.js',
