@@ -1,0 +1,139 @@
+html
+{
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  margin: 0 auto;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC) repeat;
+  background-color: #40798C;
+  top: 0;
+}
+
+nav{
+  text-align: center;
+  background-color: #70A9A1;
+  width: 100%;
+  max-width: inherit;
+  position: fixed;
+  height: 50px;
+}
+
+.books
+{
+  margin-bottom: 50px;
+}
+
+.mainDiv
+{
+  padding-top: 50px;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #f5f6f8;
+  width: 70%;
+  text-align: center;
+}
+
+/*.button
+{
+  background-color: #70A9A1;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}*/
+
+.button-links
+{
+  background-color: #70A9A1;
+  color: black;
+  padding: 16px;
+  padding-bottom: 17px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.button-links:hover
+{
+  background-color:#f5f6f8;
+  color: black;
+}
+
+footer
+{
+  color: black;
+  background-color: #70A9A1;
+  bottom: 0;
+  text-align: center;
+}
+
+.footerMain
+{
+  padding: 20px;
+}
+
+.article
+{
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 650px;
+}
+
+#botArticle
+{
+  margin-top: 50px;
+}
+
+.image_div
+{
+  width: 250px;
+  height: 250px;
+  background-color: grey;
+  display: inline-block !important;
+  text-align: center;
+}
+
+.text_div
+{
+  width: 100px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 180px;
+  visibility: hidden;
+}
+
+#image3
+{
+  background-position: 60% 20%;
+  background-image: url("img3.jpg");
+  width: 505px;
+}
+
+#image2
+{
+  background-position: 60% 20%;
+  background-image: url("img2.jpg");
+}
+
+#image1
+{
+  background-position: 50% 20%;
+  background-image: url("img1.jpg");
+}
+
+#map-container
+{
+  margin: 0 auto;
+  width: 600px;
+  height: 300px;
+}

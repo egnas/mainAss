@@ -1,0 +1,54 @@
+.mainCard
+{
+  width: 600px;
+  height: 150px;
+  background-color: #40798C;
+  margin-bottom: 20px;
+  position:relative;
+  box-shadow: 10px 10px 5px #888888;
+  margin: 0 auto;
+}
+
+.cardPicture
+{
+  float: left;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-right: 30px;
+}
+
+.cardText
+{
+  text-align: left;
+  margin-left: 30px;
+  padding-right: 10px;
+}
+
+.cardLink
+{
+  position:absolute;
+  bottom:0;
+  right: 0;
+  padding: 10px;
+}
+
+.cardButton
+{
+  text-decoration: none;
+}
+
+.cardButton:hover
+{
+  background-color:#70A9A1;
+}
+
+.cardHead
+{
+  width: 150;
+}
+
+.newText
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

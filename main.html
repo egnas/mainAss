@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#70A9A1">
+<title>Home</title>
+<link type="text/css" href="styles.css" rel="stylesheet" media="all" />
+<link type="text/css" href="burger.css" rel="stylesheet" media="all" />
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-logo57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-logo60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-logo72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-logo76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-logo114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-logo120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-logo144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-logo152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-logo180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-logo192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/fav-logo32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/fav-logo96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/fav-logo16x16.png">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <nav>
+    <a class="button-links" href="main.html">Home</a>
+    <a class="button-links" href="news.html">News</a>
+    <a class="button-links" href="registration.html">Registration</a>
+  </nav>
+  <div class="mobileNav">
+    <a class="mobileLinks" href="main.html">Home</a>
+    <a class="mobileLinks" href="news.html">News</a>
+    <a class="mobileLinks" href="registration.html">Registration</a>
+  </div>
+
+		<div class="mainDiv">
+      <header>
+        <h1>My Portfolio Page</h1>
+      </header>
+      <p class="article">Sed massa ex, iaculis nec faucibus quis, maximus vitae enim. Suspendisse cursus, metus sed scelerisque suscipit, arcu erat convallis orci, at dapibus justo elit lobortis augue. Fusce ut erat lectus. Cras ac placerat ante, sed vehicula lectus. Vivamus laoreet at odio in accumsan. Nunc sodales, augue dapibus tempor laoreet, massa nisl tristique dolor, a molestie ipsum nulla a augue. Morbi sollicitudin eget metus finibus vestibulum. Cras at neque at augue tristique consectetur. Aenean ullamcorper, enim sit amet laoreet fermentum, augue dui condimentum lacus, vel efficitur mi tortor a lectus. Mauris orci erat, pretium sed velit ac, malesuada hendrerit mi. Fusce pulvinar ornare blandit. Sed vulputate egestas erat, quis lobortis purus varius ac. Nulla suscipit velit nisi, vel consectetur tellus iaculis eget. Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
+      <picture>
+        <source media="(min-width: 650px)" srcset="images/books2x.jpg">
+        <source media="(min-width: 300px)" srcset="images/books3x.jpg">
+        <img class="books" src="images/books1x.jpg" alt="Books" style="width:auto;">
+      </picture>
+
+      <div id="map-container"></div>
+        <script>
+        function initMap() {
+            var myLocation = {lat: 53.0103798, lng: -2.1801833};
+            var map = new google.maps.Map(document.getElementById('map-container'), {
+            zoom: 3,
+            center: myLocation
+            });
+            var marker = new google.maps.Marker({
+            position: myLocation,
+            map: map
+            });
+        }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGQ5IbnLxrOIOxmmJ6hZyqea70qlxTKAo&callback=initMap" rel="noopener">
+     </script>
+          <p class="article" id="botArticle">Sed massa ex, iaculis nec faucibus quis, maximus vitae enim. Suspendisse cursus, metus sed scelerisque suscipit, arcu erat convallis orci, at dapibus justo elit lobortis augue. Fusce ut erat lectus. Cras ac placerat ante, sed vehicula lectus. Vivamus laoreet at odio in accumsan. Nunc sodales, augue dapibus tempor laoreet, massa nisl tristique dolor, a molestie ipsum nulla a augue. Morbi sollicitudin eget metus finibus vestibulum. Cras at neque at augue tristique consectetur. Aenean ullamcorper, enim sit amet laoreet fermentum, augue dui condimentum lacus, vel efficitur mi tortor a lectus. Mauris orci erat, pretium sed velit ac, malesuada hendrerit mi. Fusce pulvinar ornare blandit. Sed vulputate egestas erat, quis lobortis purus varius ac. Nulla suscipit velit nisi, vel consectetur tellus iaculis eget. Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
+		</div>
+    <footer>
+      <div class="footerMain">
+      <p>Something</p>
+      <p>Something</p>
+      <p>Something</p>
+    </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
