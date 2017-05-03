@@ -34,6 +34,11 @@ nav
   visibility: hidden;
 }
 
+.myForm
+{
+  width: 90%;
+}
+
 .mainDiv
 {
 min-height: 100%;

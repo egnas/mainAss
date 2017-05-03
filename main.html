@@ -17,29 +17,34 @@
 <link rel="apple-touch-icon" sizes="144x144" href="images/apple-logo144x144.png">
 <link rel="apple-touch-icon" sizes="152x152" href="images/apple-logo152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-logo180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="images/android-logo192x192.png">
+<link rel="icon" type="image/png" sizes="144x144"  href="images/android-logo144x144.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/fav-logo32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="images/fav-logo96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/fav-logo16x16.png">
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <nav>
-    <a class="button-links" href="main.html">Home</a>
-    <a class="button-links" href="news.html">News</a>
-    <a class="button-links" href="registration.html">Registration</a>
-  </nav>
   <div class="mobileNav">
     <a class="mobileLinks" href="main.html">Home</a>
-    <a class="mobileLinks" href="news.html">News</a>
+    <a class="mobileLinks"href="news.html">News</a>
     <a class="mobileLinks" href="registration.html">Registration</a>
   </div>
 
 		<div class="mainDiv">
+      <nav>
+        <a class="button-links" href="main.html">Home</a>
+        <a class="button-links" id="navBorder" href="registration.html">Registration</a>
+        <a class="button-links" href="news.html">News</a>
+      </nav>
       <header>
-        <h1>My Portfolio Page</h1>
+        <h1>My CV Page</h1>
       </header>
-      <p class="article">Sed massa ex, iaculis nec faucibus quis, maximus vitae enim. Suspendisse cursus, metus sed scelerisque suscipit, arcu erat convallis orci, at dapibus justo elit lobortis augue. Fusce ut erat lectus. Cras ac placerat ante, sed vehicula lectus. Vivamus laoreet at odio in accumsan. Nunc sodales, augue dapibus tempor laoreet, massa nisl tristique dolor, a molestie ipsum nulla a augue. Morbi sollicitudin eget metus finibus vestibulum. Cras at neque at augue tristique consectetur. Aenean ullamcorper, enim sit amet laoreet fermentum, augue dui condimentum lacus, vel efficitur mi tortor a lectus. Mauris orci erat, pretium sed velit ac, malesuada hendrerit mi. Fusce pulvinar ornare blandit. Sed vulputate egestas erat, quis lobortis purus varius ac. Nulla suscipit velit nisi, vel consectetur tellus iaculis eget. Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
+      <p class="article">I’m highly motivated student in what I am doing right now, website development at Staffordshire university.
+        I am an organized person, good at working with other people and on my own as well. I can get on with my work really quickly and also I have quite big knowledge in computers.
+        Ambitious and looking forward in improving in what I am doing right now. Very excited to start working in real working environment that is in my area of study, especially job like
+        hat would help me to develop my skills even further. I have experience in working hard and fast paced environment that always throws a challenge which I am not afraid to take. I feel
+        that starting to work in that kind of environment prepares you for even harder challenges to come.
+      <p>
       <picture>
         <source media="(min-width: 650px)" srcset="images/books2x.jpg">
         <source media="(min-width: 300px)" srcset="images/books3x.jpg">
@@ -55,23 +60,21 @@
             center: myLocation
             });
             var marker = new google.maps.Marker({
-            position: myLocation,
-            map: map
+              position: myLocation,
+              map: map
             });
-        }
+            }
         </script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGQ5IbnLxrOIOxmmJ6hZyqea70qlxTKAo&callback=initMap" rel="noopener">
-     </script>
-          <p class="article" id="botArticle">Sed massa ex, iaculis nec faucibus quis, maximus vitae enim. Suspendisse cursus, metus sed scelerisque suscipit, arcu erat convallis orci, at dapibus justo elit lobortis augue. Fusce ut erat lectus. Cras ac placerat ante, sed vehicula lectus. Vivamus laoreet at odio in accumsan. Nunc sodales, augue dapibus tempor laoreet, massa nisl tristique dolor, a molestie ipsum nulla a augue. Morbi sollicitudin eget metus finibus vestibulum. Cras at neque at augue tristique consectetur. Aenean ullamcorper, enim sit amet laoreet fermentum, augue dui condimentum lacus, vel efficitur mi tortor a lectus. Mauris orci erat, pretium sed velit ac, malesuada hendrerit mi. Fusce pulvinar ornare blandit. Sed vulputate egestas erat, quis lobortis purus varius ac. Nulla suscipit velit nisi, vel consectetur tellus iaculis eget. Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
+        </script>
+          <p class="article" id="botArticle">Sed  Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
+          <footer>
+            <div class="footerMain">
+            <p>Something</p>
+          </div>
+          </footer>
 		</div>
-    <footer>
-      <div class="footerMain">
-      <p>Something</p>
-      <p>Something</p>
-      <p>Something</p>
-    </div>
-    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>

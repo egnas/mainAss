@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#70A9A1">
 <title>Registration</title>
 <link type="text/css" href="styles.css" rel="stylesheet" />
 <link type="text/css" href="burger.css" rel="stylesheet" />
@@ -20,61 +22,59 @@
 <link rel="icon" type="image/png" sizes="16x16" href="images/fav-logo16x16.png">
 </head>
 <body>
-  <nav>
-    <a class="button-links" href="main.html">Home</a>
-    <a class="button-links" href="news.html">News</a>
-    <a class="button-links" href="registration.html">Registration</a>
-  </nav>
   <div class="mobileNav">
     <a class="mobileLinks" href="main.html">Home</a>
     <a class="mobileLinks" href="news.html">News</a>
     <a class="mobileLinks" href="registration.html">Registration</a>
   </div>
 		<div class="mainDiv">
+      <nav>
+        <a class="button-links" href="main.html">Home</a>
+        <a class="button-links" id="navBorder" href="registration.html">Registration</a>
+        <a class="button-links" href="news.html">News</a>
+      </nav>
       <header>
       </header>
-      <h1>Registration</h1>
+      <h1>Feedback</h1>
       <form class="myForm" method="get">
 
       <p>
-      <label>Name
-      <input type="text" name="customer_name" required>
+      <label class="regLabel" >Name
+      <input class="regInput" type="text" name="customer_name" required>
       </label>
       </p>
 
       <p>
-      <label>Email
-      <input type="email" name="email_address" required>
+      <label class="regLabel">Email
+      <input class="regInput"  type="email" name="email_address" required>
       </label>
       </p>
 
       <p>
-      <label>Phone number
-      <input type="number" name="customer_number" required="" min="4" max="10">
+      <label class="regLabel">Phone number
+      <input class="regInput" type="number" name="customer_number" required="" min="4" max="10">
       </label>
       </p>
 
       <fieldset>
-      <legend>Do you want to receive emails?</legend>
-      <p><label class="choice"> <input type="radio" name="radioChoice" required value="Yes"> Yes </label></p>
-      <p><label class="choice"> <input type="radio" name="radioChoice" required value="No"> No </label></p>
-      <p><label class="choice"> <input type="radio" name="radioChoice" required value="Onlysometimes"> Only sometimes </label></p>
+      <legend  class="regLabel">Do you want to receive emails?</legend>
+      <p><label class="choice"> <input class="radioB" type="radio" name="radioChoice" required value="Yes"> Yes </label></p>
+      <p><label class="choice"> <input class="radioB" type="radio" name="radioChoice" required value="No"> No </label></p>
+      <p><label class="choice"> <input class="radioB" type="radio" name="radioChoice" required value="Onlysometimes"> Only sometimes </label></p>
       </fieldset>
 
-      <p><button>Submit Enquiry</button></p>
+      <p><button class="formButton">Submit</button></p>
 
       </form>
       <p class="article">Sed massa ex, iaculis nec faucibus quis, maximus vitae enim. Suspendisse cursus, metus sed scelerisque suscipit, arcu erat convallis orci, at dapibus justo elit lobortis augue. Fusce ut erat lectus. Cras ac placerat ante, sed vehicula lectus. Vivamus laoreet at odio in accumsan. Nunc sodales, augue dapibus tempor laoreet, massa nisl tristique dolor, a molestie ipsum nulla a augue. Morbi sollicitudin eget metus finibus vestibulum. Cras at neque at augue tristique
       consectetur. Aenean ullamcorper, enim sit amet laoreet fermentum, augue dui condimentum lacus, vel efficitur mi tortor a lectus. Mauris orci erat, pretium sed velit ac, malesuada hendrerit mi. Fusce pulvinar ornare blandit. Sed vulputate egestas erat, quis lobortis purus varius ac. Nulla suscipit velit nisi, vel consectetur tellus iaculis eget. Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
-      <p class="article">Sed massa ex, iaculis nec faucibus quis, maximus vitae enim. Suspendisse cursus, metus sed scelerisque suscipit, arcu erat convallis orci, at dapibus justo elit lobortis augue. Fusce ut erat lectus. Cras ac placerat ante, sed vehicula lectus. Vivamus laoreet at odio in accumsan. Nunc sodales, augue dapibus tempor laoreet, massa nisl tristique dolor, a molestie ipsum nulla a augue. Morbi sollicitudin eget metus finibus vestibulum. Cras at neque at augue tristique consectetur. Aenean ullamcorper, enim sit amet laoreet fermentum, augue dui condimentum lacus, vel efficitur mi tortor a lectus. Mauris orci erat, pretium sed velit ac, malesuada hendrerit mi. Fusce pulvinar ornare blandit. Sed vulputate egestas erat, quis lobortis purus varius ac. Nulla suscipit velit nisi, vel consectetur tellus iaculis eget. Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
+      <p class="article" id="botArticle">Sed  Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
+      <footer>
+        <div class="footerMain">
+        <p>Something</p>
+      </div>
+      </footer>
     </div>
-    <footer>
-      <div class="footerMain">
-      <p>Something</p>
-      <p>Something</p>
-      <p>Something</p>
-      <div>
-    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
