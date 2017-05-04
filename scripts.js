@@ -6,5 +6,3 @@ if ('serviceWorker' in navigator) {
     console.log('Service worker registration failed: ', err);
   });
 }
-
-document.getElementById('map-container').alt = "Google maps";
