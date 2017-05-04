@@ -6,57 +6,57 @@
         "link": "template.html"
     },
     {
-        "picture": "images/weblogo.png",
+        "picture": "images/sounds.png",
         "heading": "Canvas with sounds",
         "text": "In this task I draw shapes in canvas with various different sounds",
         "link": "http://google.com/?q=Sunt nulla"
     },
     {
-        "picture": "images/weblogo.png",
+        "picture": "images/snake.png",
         "heading": "Snake eyes",
         "text": "This task is a game-like one which involves two dice",
         "link": "http://google.com/?q=Android.com website"
     },
     {
-        "picture": "images/weblogo.png",
+        "picture": "images/twitter.png",
         "heading": "Twitter api",
         "text": "This task had me working with twitter api and displaying certain data",
         "link": "http://google.com/?q=Dashboard template"
     },
     {
-        "picture": "images/weblogo.png",
+        "picture": "images/movies.png",
         "heading": "Movies from database",
         "text": "In this task I retreive movie data from a text file and display it on screen",
         "link": "http://google.com/?q=Text-heavy website"
     },
     {
-        "picture": "images/weblogo.png",
+        "picture": "images/fish.png",
         "heading": "Fish tank",
         "text": "In this task I had to implement interactive canvas",
         "link": "http://google.com/?q=Ex officia laborum"
     },
     {
-        "picture": "images/weblogo.png",
+        "picture": "images/animation.png",
         "heading": "Animation",
         "text": "This task had me working with canvas animations",
         "link": "http://google.com/?q=Ex officia laborum"
     },
     {
-        "picture": "images/weblogo.png",
+        "picture": "images/hangman.png",
         "heading": "Hangman",
         "text": "In this task I made hangman game with javascript",
         "link": "http://google.com/?q=Ex officia laborum"
     },
     {
-        "picture": "images/weblogo.png",
+        "picture": "images/registration.png",
         "heading": "Registration",
         "text": "In this task I had to do a registration form with PHP",
         "link": "http://google.com/?q=Ex officia laborum"
     },
     {
-        "picture": "images/weblogo.png",
-        "heading": "Task 10",
-        "text": "Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.",
+        "picture": "images/tables.png",
+        "heading": "Tables",
+        "text": "In this task I produced different tables for various purposes",
         "link": "http://google.com/?q=Ex officia laborum"
     }
 
