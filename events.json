@@ -1,6 +1,6 @@
 [
     {
-        "picture": "images/weblogo.png",
+        "picture": "images/cars.png",
         "heading": "Canvas task",
         "text": "This is the task where I draw cars with html canvas",
         "link": "template.html"
