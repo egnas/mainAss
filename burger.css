@@ -29,6 +29,11 @@
     display: inline-grid;
 }
 
+.mainCard
+{
+  height: 200px;
+}
+
 nav
 {
   visibility: hidden;
