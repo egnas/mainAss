@@ -36,6 +36,7 @@ var CACHED_URLS = [
     BASE_PATH + 'images/animation.png',
     BASE_PATH + 'images/registration.png',
     BASE_PATH + 'images/snake.png',
+    BASE_PATH + 'images/burgerIcon.png',
 
     // JavaScript
     BASE_PATH + 'offline-map.js',
