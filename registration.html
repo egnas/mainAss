@@ -24,12 +24,16 @@
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div class="mobileNav">
-    <a class="mobileLinks" href="main.html">Home</a>
-    <a class="mobileLinks" href="news.html">News</a>
-    <a class="mobileLinks" href="registration.html">Registration</a>
-  </div>
-		<div class="mainDiv">
+      <div class="mainDiv">
+        <div class="mobileNav" id="mobile">
+          <a class="mobileLinks" href="main.html">Home</a>
+          <a class="mobileLinks"href="news.html">News</a>
+          <a class="mobileLinks" href="registration.html">Registration</a>
+        </div>
+        <label class="burgerLabel">
+          <img src="http://www.cutcodedown.com/images/burgerIcon.png" class="burgerImg">
+        <input id="burgerId" class="burger" type="checkbox" name="burger" value="">
+      </label>
       <nav>
         <a class="button-links" href="main.html">Home</a>
         <a class="button-links" id="navBorder" href="registration.html">Registration</a>
@@ -68,9 +72,7 @@
       <p><button class="formButton">Submit</button></p>
 
       </form>
-      <p class="article">Sed massa ex, iaculis nec faucibus quis, maximus vitae enim. Suspendisse cursus, metus sed scelerisque suscipit, arcu erat convallis orci, at dapibus justo elit lobortis augue. Fusce ut erat lectus. Cras ac placerat ante, sed vehicula lectus. Vivamus laoreet at odio in accumsan. Nunc sodales, augue dapibus tempor laoreet, massa nisl tristique dolor, a molestie ipsum nulla a augue. Morbi sollicitudin eget metus finibus vestibulum. Cras at neque at augue tristique
-      consectetur. Aenean ullamcorper, enim sit amet laoreet fermentum, augue dui condimentum lacus, vel efficitur mi tortor a lectus. Mauris orci erat, pretium sed velit ac, malesuada hendrerit mi. Fusce pulvinar ornare blandit. Sed vulputate egestas erat, quis lobortis purus varius ac. Nulla suscipit velit nisi, vel consectetur tellus iaculis eget. Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
-      <p class="article" id="botArticle">Sed  Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
+      <p class="article">The form above is just a simple questionaire, that can keep you updated with new events if you choose to.</p>
       <footer>
         <div class="footerMain">
         <p>Ignas Miklovis</p>

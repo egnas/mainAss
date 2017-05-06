@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <title>TASK 1</title>
 <link type="text/css" href="styles.css" rel="stylesheet" />
+<link type="text/css" href="burger.css" rel="stylesheet" />
 <link rel="apple-touch-icon" sizes="57x57" href="images/apple-logo57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="images/apple-logo60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-logo72x72.png">
@@ -19,30 +20,32 @@
 <link rel="icon" type="image/png" sizes="16x16" href="images/fav-logo16x16.png">
 </head>
 <body>
-  <nav>
-    <a class="button-links" href="main.html">Home</a>
-    <a class="button-links" href="news.html">News</a>
-    <a class="button-links" href="registration.html">Registration</a>
-  </nav>
-  <div class="mobileNav">
-    <a class="mobileLinks" href="main.html">Home</a>
-    <a class="mobileLinks" href="news.html">News</a>
-    <a class="mobileLinks" href="registration.html">Registration</a>
-  </div>
-		<div class="mainDiv">
+      <div class="mainDiv">
+        <div class="mobileNav" id="mobile">
+          <a class="mobileLinks" href="main.html">Home</a>
+          <a class="mobileLinks"href="news.html">News</a>
+          <a class="mobileLinks" href="registration.html">Registration</a>
+        </div>
+        <label class="burgerLabel">
+          <img src="http://www.cutcodedown.com/images/burgerIcon.png" class="burgerImg">
+        <input id="burgerId" class="burger" type="checkbox" name="burger" value="">
+      </label>
+      <nav>
+        <a class="button-links" href="main.html">Home</a>
+        <a class="button-links" id="navBorder" href="registration.html">Registration</a>
+        <a class="button-links" href="news.html">News</a>
+      </nav>
       <header>
       </header>
-      <h1>TASK 1</h1>
-      <p class="exapmpleText">
+      <h1>Canvas Task</h1>
+      <p class="exampleText">
       Nam maximus eleifend ipsum, at fermentum lorem ullamcorper sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer cursus massa ipsum. Aliquam convallis nisi nunc, ac tincidunt mauris hendrerit vel. Vestibulum ipsum augue, efficitur quis metus in, mattis lobortis lorem. Nullam ut tristique lacus, sed euismod nisl. Praesent pellentesque rutrum efficitur. Fusce fringilla, sem at semper congue, dui ante pretium lorem, quis iaculis felis ante sit amet mauris. Nullam turpis velit, luctus id auctor eget, tempor sit amet ex. Mauris sit amet erat vitae nunc aliquam fringilla. Vestibulum tincidunt, urna nec mollis fringilla, ipsum odio blandit leo, ut luctus turpis tortor vel felis. Pellentesque at nisi tortor. Donec lectus tortor, fringilla eget rutrum non, pulvinar et leo. Sed et semper sapien. Nam faucibus sollicitudin leo, eget interdum nibh mollis et. Nunc turpis tellus, mollis vitae tincidunt ac, interdum at erat.
     </p>
     </div>
 		</div>
     <footer>
       <div class="footerMain">
-      <p>Something</p>
-      <p>Something</p>
-      <p>Something</p>
+      <p>Ignas Miklovis</p>
       <div>
     </footer>
     <script src="events.js"></script>

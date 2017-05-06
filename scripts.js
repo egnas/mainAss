@@ -6,3 +6,17 @@ if ('serviceWorker' in navigator) {
     console.log('Service worker registration failed: ', err);
   });
 }
+
+let button = document.getElementById("burgerId");
+
+
+button.addEventListener("click", function()
+{
+  if(button.checked == true)
+  {
+    document.getElementById("mobile").style.display = "inline-grid";
+  }
+  else {
+    document.getElementById("mobile").style.display = "none";
+  }
+});

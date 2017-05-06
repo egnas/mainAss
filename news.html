@@ -25,12 +25,16 @@
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div class="mobileNav">
-    <a class="mobileLinks" href="main.html">Home</a>
-    <a class="mobileLinks" href="news.html">News</a>
-    <a class="mobileLinks" href="registration.html">Registration</a>
-  </div>
-		<div class="mainDiv">
+      <div class="mainDiv">
+        <div class="mobileNav" id="mobile">
+          <a class="mobileLinks" href="main.html">Home</a>
+          <a class="mobileLinks"href="news.html">News</a>
+          <a class="mobileLinks" href="registration.html">Registration</a>
+        </div>
+        <label class="burgerLabel">
+          <img src="http://www.cutcodedown.com/images/burgerIcon.png" class="burgerImg">
+        <input id="burgerId" class="burger" type="checkbox" name="burger" value="">
+      </label>
       <nav>
         <a class="button-links" href="main.html">Home</a>
         <a class="button-links" id="navBorder" href="registration.html">Registration</a>
