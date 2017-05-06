@@ -35,9 +35,9 @@
   display: none;
 }
 
-.burgerLabel
+.labelText
 {
-  background-image: url("http://www.cutcodedown.com/images/burgerIcon.png");
+  display: none;
 }
 
 @media only screen and (max-width: 800px) {
