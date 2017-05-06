@@ -52,6 +52,9 @@
       </picture>
 
       <div id="map-container"></div>
+      <div id="places">
+        <p>Nearby stores found:</p>
+      </div>
         <script>
         var map;
         var infowindow;
@@ -83,6 +86,8 @@
           if (status === google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
               createMarker(results[i]);
+              console.log(results[i].name);
+              document.getElementById("places").innerHTML += "<p>" + results[i].name + "</p>";
             }
           }
         }
@@ -106,7 +111,6 @@
         }
         </script>
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGQ5IbnLxrOIOxmmJ6hZyqea70qlxTKAo&libraries=places&callback=initMap" async defer></script>
-          <p class="article" id="botArticle">Sed  Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
           <footer>
             <div class="footerMain">
             <p>Ignas Miklovis</p>
