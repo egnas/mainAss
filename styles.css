@@ -140,3 +140,104 @@ footer
   margin: 0 auto;
   margin-bottom: 50px;
 }
+
+.navigation
+{
+  visibility: hidden;
+}
+
+.mobileLinks
+{
+  text-align: center;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mobileNav
+{
+  display: none;
+  width: 100%;
+  margin-top: 0;
+}
+
+.burgerImg
+{
+  width: 50px;
+  height: 50px;
+  display: none;
+  margin-top: 0;
+}
+
+.burger
+{
+  display: none;
+}
+
+.labelText
+{
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+.mainCard
+{
+  height: 200px;
+}
+
+.burgerImg
+{
+  display: block;
+}
+
+nav
+{
+  visibility: hidden;
+}
+
+.myForm
+{
+  width: 90%;
+}
+
+.mainDiv
+{
+  padding-top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  background-size: 200%;
+  border: 0px solid #70A9A1;
+}
+
+.footer
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.article
+{
+  width: 80%;
+}
+
+#map-container
+{
+  width: 250px;
+  height: 100px;
+}
+
+}
