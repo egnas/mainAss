@@ -53,25 +53,63 @@
 
       <div id="map-container"></div>
         <script>
+        var map;
+        var infowindow;
+
         function initMap() {
-            var myLocation = {lat: 53.0103798, lng: -2.1801833};
-            var map = new google.maps.Map(document.getElementById('map-container'), {
-            zoom: 3,
-            center: myLocation
-            });
-            var marker = new google.maps.Marker({
-              position: myLocation,
-              map: map
-            });
+          var pyrmont = {lat: 53.0103798, lng: -2.1801833};
+
+          map = new google.maps.Map(document.getElementById('map-container'), {
+            center: pyrmont,
+            zoom: 10
+
+          });
+
+          var marker = new google.maps.Marker({
+            position: pyrmont,
+            map: map
+          });
+
+          infowindow = new google.maps.InfoWindow();
+          var service = new google.maps.places.PlacesService(map);
+          service.nearbySearch({
+            location: pyrmont,
+            radius: 100,
+            type: ['store']
+          }, callback);
+        }
+
+        function callback(results, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+              createMarker(results[i]);
             }
+          }
+        }
+
+        function createMarker(place) {
+          var placeLoc = place.geometry.location;
+          var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location,
+            icon: {
+              url: 'https://developers.google.com/maps/documentation/javascript/images/circle.png',
+              anchor: new google.maps.Point(10, 10),
+              scaledSize: new google.maps.Size(25, 35)
+            }
+          });
+
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent(place.name);
+            infowindow.open(map, this);
+          });
+        }
         </script>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGQ5IbnLxrOIOxmmJ6hZyqea70qlxTKAo&callback=initMap" rel="noopener">
-        </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGQ5IbnLxrOIOxmmJ6hZyqea70qlxTKAo&libraries=places&callback=initMap" async defer></script>
           <p class="article" id="botArticle">Sed  Proin pretium metus odio. Nullam fringilla augue vitae sapien mollis tempor.</p>
           <footer>
             <div class="footerMain">
-            <p>Something</p>
+            <p>Ignas Miklovis</p>
           </div>
           </footer>
 		</div>
