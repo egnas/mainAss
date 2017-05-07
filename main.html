@@ -58,11 +58,11 @@
         <p>Nearby stores found:</p>
       </div>
         <script>
-        var map;
-        var infowindow;
+        let map;
+        let infowindow;
 
         function initMap() {
-          var pyrmont = {lat: 53.0103798, lng: -2.1801833};
+          const pyrmont = {lat: 53.0103798, lng: -2.1801833};
 
           map = new google.maps.Map(document.getElementById('map-container'), {
             center: pyrmont,
@@ -70,13 +70,13 @@
 
           });
 
-          var marker = new google.maps.Marker({
+          let marker = new google.maps.Marker({
             position: pyrmont,
             map: map
           });
 
           infowindow = new google.maps.InfoWindow();
-          var service = new google.maps.places.PlacesService(map);
+          let service = new google.maps.places.PlacesService(map);
           service.nearbySearch({
             location: pyrmont,
             radius: 100,
@@ -86,7 +86,7 @@
 
         function callback(results, status) {
           if (status === google.maps.places.PlacesServiceStatus.OK) {
-            for (var i = 0; i < results.length; i++) {
+            for (let i = 0; i < results.length; i++) {
               createMarker(results[i]);
               console.log(results[i].name);
               document.getElementById("places").innerHTML += "<p>" + results[i].name + "</p>";
@@ -95,8 +95,8 @@
         }
 
         function createMarker(place) {
-          var placeLoc = place.geometry.location;
-          var marker = new google.maps.Marker({
+          let placeLoc = place.geometry.location;
+          let marker = new google.maps.Marker({
             map: map,
             position: place.geometry.location,
             icon: {
@@ -121,7 +121,7 @@
 		</div>
       <script type="text/javascript">
         function downloadJSAtOnload() {
-        var element = document.createElement("script");
+        let element = document.createElement("script");
           element.src = "scripts.js";
           document.body.appendChild(element);
         }
@@ -132,21 +132,6 @@
         {
           window.attachEvent("onload", downloadJSAtOnload);
         }else {window.onload = downloadJSAtOnload;}
-        /* First CSS File */
-        // var giftofspeed = document.createElement('link');
-        // giftofspeed.rel = 'stylesheet';
-        // giftofspeed.href = 'styles.css';
-        // giftofspeed.type = 'text/css';
-        // var godefer = document.getElementsByTagName('link')[0];
-        // godefer.parentNode.insertBefore(giftofspeed, godefer);
-
-        /* Second CSS File */
-        // var giftofspeed2 = document.createElement('link');
-        // giftofspeed2.rel = 'stylesheet';
-        // giftofspeed2.href = 'burger.css';
-        // giftofspeed2.type = 'text/css';
-        // var godefer2 = document.getElementsByTagName('link')[0];
-        // godefer2.parentNode.insertBefore(giftofspeed2, godefer2);
       </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
-var BASE_PATH = '/mainAss/';
-var CACHE_NAME = 'gih-cache-v6';
-var CACHED_URLS = [
+const BASE_PATH = '/mainAss/';
+const CACHE_NAME = 'gih-cache-v6';
+const CACHED_URLS = [
     // Our HTML
     BASE_PATH + 'main.html',
     BASE_PATH + 'news.html',
@@ -53,7 +53,7 @@ var CACHED_URLS = [
     BASE_PATH + 'styles.css'
 ];
 
-var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=45b3aaa612fd4093bd7b28986c66bc97&callback=initMap';
+const googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=45b3aaa612fd4093bd7b28986c66bc97&callback=initMap';
 
 self.addEventListener('install', function(event) {
   // Cache everything in CACHED_URLS. Installation fails if anything fails to cache
@@ -65,13 +65,13 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-  var requestURL = new URL(event.request.url);
+  let requestURL = new URL(event.request.url);
   // Handle requests for index.html
   if (requestURL.pathname === BASE_PATH + 'main.html') {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return cache.match('main.html').then(function(cachedResponse) {
-          var fetchPromise = fetch('main.html').then(function(networkResponse) {
+          let fetchPromise = fetch('main.html').then(function(networkResponse) {
             cache.put('main.html', networkResponse.clone());
             return networkResponse;
           });
