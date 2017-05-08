@@ -33,7 +33,7 @@ if(myForm){
             "choice": e.target.radioChoice.value,
         };
 
-        fetch("https://gregtek.net", {mode: "no-cors", method: "POST", body: contact})
+        fetch("https://cteth.com", {mode: "no-cors", method: "POST", body: contact})
             .then(response => {
                 console.log('hello response!', response);
             }).catch(() => {
