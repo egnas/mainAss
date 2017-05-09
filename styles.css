@@ -200,6 +200,11 @@ footer
   visibility: hidden;
 }
 
+.cardLink
+{
+  font-size: 1.5em;
+}
+
 .burgerImg
 {
   display: block;
