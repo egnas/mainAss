@@ -190,6 +190,21 @@ footer
   height: 200px;
 }
 
+.cardHead
+{
+  visibility: hidden;
+}
+
+.cardText
+{
+  visibility: hidden;
+}
+
+.cardButton
+{
+  font-size: 1.5em;
+}
+
 .burgerImg
 {
   display: block;
